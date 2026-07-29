@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Allergie — Alergia e Imunologia na Barra da Tijuca</title>
+    <meta name="description" content="Clínica de excelência em alergia e imunologia na Barra da Tijuca. Cuidado humano e individualizado com Dra. Flávia Loyola e Dra. Marina Rigoni.">
+    <meta name="author" content="Clínica Allergie">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Clínica Allergie — Alergia e Imunologia">
+    <meta property="og:description" content="Investigação completa e tratamentos avançados em alergia e imunologia. Atendimento particular no CEO Corporate, Barra da Tijuca.">
+    <meta property="og:image" content="assets/medicas-hero-v2.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.2">
+                    <path d="M4 52 V28 a24 24 0 0 1 48 0 V52"></path>
+                    <path d="M18 44 L28 22 L38 44" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M22 38 H34" stroke-linecap="round"></path>
+                </svg>
+                <span class="logo-text">
+                    <span class="logo-title">Allergie</span>
+                    <span class="logo-subtitle">Clínica</span>
+                </span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#tratamentos" class="nav-link">O Que Atendemos</a>
+                <a href="#clinica" class="nav-link">Procedimentos</a>
+                <a href="#depoimentos" class="nav-link">Depoimentos</a>
+                <a href="#quem-somos" class="nav-link">Quem Somos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+            
+            <div class="nav-btn-wrapper">
+                <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                    </svg>
+                    Agendar Consulta
+                </a>
+            </div>
+
+            <button id="mobileMenuBtn" aria-label="Abrir menu" class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileOverlay" class="mobile-drawer-overlay"></div>
+    <div id="mobileDrawer" class="mobile-drawer">
+        <div class="mobile-drawer-header">
+            <span class="logo">
+                <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.2" style="width:32px; height:32px;">
+                    <path d="M4 52 V28 a24 24 0 0 1 48 0 V52"></path>
+                    <path d="M18 44 L28 22 L38 44" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M22 38 H34" stroke-linecap="round"></path>
+                </svg>
+                <span class="logo-text">
+                    <span class="logo-title" style="font-size:18px;">Allergie</span>
+                </span>
+            </span>
+            <button id="closeDrawerBtn" aria-label="Fechar menu" class="mobile-drawer-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <nav class="mobile-nav-links">
+            <a href="#inicio" class="mobile-nav-link">Início</a>
+            <a href="#tratamentos" class="mobile-nav-link">O Que Atendemos</a>
+            <a href="#clinica" class="mobile-nav-link">Procedimentos</a>
+            <a href="#depoimentos" class="mobile-nav-link">Depoimentos</a>
+            <a href="#quem-somos" class="mobile-nav-link">Quem Somos</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#contato" class="mobile-nav-link">Contato</a>
+        </nav>
+        
+        <div style="margin-top: auto;">
+            <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta" style="width:100%; justify-content:center;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px; height:16px;">
+                    <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                </svg>
+                Agendar Consulta
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg-shape"></div>
+        
+        <div class="hero-img-wrapper reveal">
+            <img src="assets/medicas-hero-v2.png" alt="Dra. Flávia Carvalho Loyola e Dra. Marina Rigoni Costa Moreira — Clínica Allergie" class="hero-img">
+        </div>
+
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <p class="hero-tag">CLÍNICA DE EXCELÊNCIA EM ALERGIA</p>
+                <h1 class="hero-title">
+                    Clínica de excelência para você tratar suas alergias com <em>segurança</em> e voltar a viver com liberdade.
+                </h1>
+                <p class="hero-desc">
+                    O nosso cuidado especializado, humano e individualizado para crianças e adultos. Tratamentos avançados na Barra da Tijuca.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding: 16px 32px; font-size: 15px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 18px; height: 18px;">
+                            <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                        </svg>
+                        Agendar Consulta
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatments Section -->
+    <section id="tratamentos" class="section-padding treatments">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-header-tag">O QUE ATENDEMOS</p>
+                <h2 class="section-header-title">Existe um caminho seguro e desenhado exclusivamente para você.</h2>
+                <p class="section-header-desc">O nosso cuidado começa com uma avaliação detalhada da sua história. Vamos muito além do alívio momentâneo para buscar resultados consistentes.</p>
+            </div>
+            
+            <!-- Grid 1 (Cards 1 to 3) -->
+            <div class="treatments-grid-3">
+                <!-- Card 1 -->
+                <div class="treatment-card">
+                    <span class="treatment-num">01</span>
+                    <h3>Alergias Respiratórias</h3>
+                    <p class="treatment-subtitle">Rinite, Asma e Sinusite</p>
+                    <div class="treatment-divider"></div>
+                    <button class="btn-learn-more">Saiba Mais <span>&rarr;</span></button>
+                    <div class="treatment-detail">
+                        <p>Investigamos gatilhos como ácaros, fungos, pólen e pelos de animais. Combinamos manejo ambiental, tratamento medicamentoso e imunoterapia alérgeno-específica para modificar a história da doença e reduzir crises a longo prazo.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="treatment-card">
+                    <span class="treatment-num">02</span>
+                    <h3>Alergias Alimentares</h3>
+                    <p class="treatment-subtitle">Investigação e manejo seguro</p>
+                    <div class="treatment-divider"></div>
+                    <button class="btn-learn-more">Saiba Mais <span>&rarr;</span></button>
+                    <div class="treatment-detail">
+                        <p>Avaliação completa com história clínica detalhada, elaboração de plano de ação (de emergência), testes cutâneos e definição de tratamento. Quando indicado, realizamos Testes de Provocação Oral e tratamento de dessensibilização em um ambiente seguro e regulamentado (clínica tipo 3).</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="treatment-card">
+                    <span class="treatment-num">03</span>
+                    <h3>Esofagite Eosinofílica</h3>
+                    <p class="treatment-subtitle">Investigação e acompanhamento</p>
+                    <div class="treatment-divider"></div>
+                    <button class="btn-learn-more">Saiba Mais <span>&rarr;</span></button>
+                    <div class="treatment-detail">
+                        <p>Investigação e acompanhamento individualizado, com a prescrição de tratamentos que visam o alívio dos sintomas e o controle absoluto da doença. O uso de imunobiológicos também é uma estratégia para casos graves.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Grid 2 (Cards 4 to 7) -->
+            <div class="treatments-grid-4">
+                <!-- Card 4 -->
+                <div class="treatment-card">
+                    <span class="treatment-num">04</span>
+                    <h3>Alergias Dermatológicas</h3>
+                    <p class="treatment-subtitle">Dermatite Atópica e Urticária</p>
+                    <div class="treatment-divider"></div>
+                    <button class="btn-learn-more">Saiba Mais <span>&rarr;</span></button>
+                    <div class="treatment-detail">
+                        <p>Combinamos tratamentos modernos, controle de gatilhos e, quando necessário, imunobiológicos com o objetivo de melhorar a coceira e a pele, devolvendo conforto e qualidade de vida.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="treatment-card">
+                    <span class="treatment-num">05</span>
+                    <h3>Alergias a Medicamentos</h3>
+                    <p class="treatment-subtitle">Reações a fármacos</p>
+                    <div class="treatment-divider"></div>
+                    <button class="btn-learn-more">Saiba Mais <span>&rarr;</span></button>
+                    <div class="treatment-detail">
+                        <p>Quando indicados, realizamos testes cutâneos e de provocação controlados, trazendo mais segurança para o paciente.</p>
+                    </div>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="treatment-card">
+                    <span class="treatment-num">06</span>
+                    <h3>Alergia a Picada de Insetos</h3>
+                    <p class="treatment-subtitle">Mosquito, abelha, vespa e formiga</p>
+                    <div class="treatment-divider"></div>
+                    <p style="font-size: 14px; color: rgba(53, 33, 25, 0.8); line-height: 1.5; padding: 12px; background-color: rgba(176, 124, 92, 0.05); border-left: 2px solid var(--clay); border-radius: 4px; text-align: left; width: 100%;">Mosquito, abelha, vespa e formiga</p>
+                </div>
+                
+                <!-- Card 7 -->
+                <div class="treatment-card">
+                    <span class="treatment-num">07</span>
+                    <h3>Infecções de Repetição</h3>
+                    <p class="treatment-subtitle">e Avaliação de Imunidade</p>
+                    <div class="treatment-divider"></div>
+                    <button class="btn-learn-more">Saiba Mais <span>&rarr;</span></button>
+                    <div class="treatment-detail">
+                        <p>Investigamos Erros Inatos da Imunidade e imunodeficiências secundárias.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clinic-alert-box">
+                <p>Nossa clínica é classificada como uma <em>Clínica Tipo 3</em>, um ambiente seguro e com uma equipe preparada para realização de procedimentos complexos e manejo de possíveis reações. A clínica cumpre todas as exigências dos órgãos competentes.</p>
+            </div>
+            
+            <div class="treatments-footer">
+                <p>Tratar uma alergia é muito mais do que aliviar sintomas: é devolver autonomia e segurança para a sua rotina.</p>
+                <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding: 16px 32px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                        <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                    </svg>
+                    Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic / Structure Section -->
+    <section id="clinica" class="section-padding clinic-structure">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-header-tag">EXAMES E PROCEDIMENTOS / TESTES</p>
+                <h2 class="section-header-title">Infraestrutura de alta complexidade e segurança máxima.</h2>
+                <p class="section-header-desc">Nosso consultório é classificado como uma Clínica Tipo 3, possuímos a estrutura técnica rigorosa e o ambiente monitorado necessários para realizar procedimentos alérgicos complexos com total conforto para você e sua família.</p>
+            </div>
+            
+            <div class="structure-grid">
+                <!-- item 1 -->
+                <div class="structure-card">
+                    <h3>Teste Alérgico Tradicional (Prick test)</h3>
+                    <p>Teste cutâneo de puntura, com resultado rápido (em até 20 min), realizado no consultório, para identificar os possíveis causadores das alergias.</p>
+                </div>
+                <!-- item 2 -->
+                <div class="structure-card">
+                    <h3>Teste de Contato</h3>
+                    <p>Investigação detalhada para descobrir as substâncias que causam lesões e alergias na pele.</p>
+                </div>
+                <!-- item 3 -->
+                <div class="structure-card">
+                    <h3>Teste Cutâneo com Alimentos (Prick-to-prick)</h3>
+                    <p>Investigação feita diretamente com o alimento in natura, fornecendo um resultado mais sensível na avaliação das alergias alimentares.</p>
+                </div>
+                <!-- item 4 -->
+                <div class="structure-card">
+                    <h3>Teste de Provocação Oral (TPO)</h3>
+                    <p>O método padrão-ouro para confirmar ou excluir alergias, realizado sob supervisão médica, em ambiente seguro.</p>
+                </div>
+                <!-- item 5 -->
+                <div class="structure-card">
+                    <h3>Dessensibilização Alimentar (Imunoterapia oral)</h3>
+                    <p>Tratamento especializado para pacientes com alergia alimentar grave, que visa aumentar a tolerância do organismo ao alimento.</p>
+                </div>
+                <!-- item 6 -->
+                <div class="structure-card">
+                    <h3>Imunoterapia Alérgeno-específica (“Vacina da alergia”)</h3>
+                    <p>O tratamento pode ser realizado pelas vias subcutânea, sublingual e em “esquema Cluster” (acelerado) para ácaros, pelo de animais e insetos.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding: 16px 32px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                        <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                    </svg>
+                    Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="section-padding testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-header-tag">DEPOIMENTOS</p>
+                <h2 class="section-header-title">Histórias reais de quem recuperou a tranquilidade.</h2>
+                <p class="section-header-desc">Nada nos traz mais orgulho do que ver nossos pacientes voltando a comer com liberdade, respirando melhor e vivendo sem medo.</p>
+            </div>
+            
+            <div class="slider-wrapper">
+                <div id="sliderContainer" class="slider-container">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote">
+                                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                            </svg>
+                            <p class="testimonial-text">"Conhecer a Dra. Flávia e a Dra. Marina foi um divisor de águas na jornada da nossa família com a alergia alimentar da nossa filha. Depois de tantas vezes ouvirmos que apenas precisávamos esperar, encontramos profissionais que, além de conhecimento técnico, nos ofereceram acolhimento, segurança e informação. Cada evolução da Maria representa uma grande conquista para nós."</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">Larissa e Jonathan</span>
+                                <span class="author-loc">pais da Maria — Ubá / MG</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote">
+                                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                            </svg>
+                            <p class="testimonial-text">"Nosso filho iniciou o tratamento para alergia à proteína do leite de vaca, passando por todo o processo de dessensibilização com muito cuidado, atenção e segurança. Elas sempre esclareceram nossas dúvidas com muita paciência. Hoje, nosso filho já está na fase de manutenção, e seguimos recebendo o mesmo suporte próximo."</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">Thércia e Fábio</span>
+                                <span class="author-loc">pais de paciente — Teresópolis / RJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote">
+                                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                            </svg>
+                            <p class="testimonial-text">"Quando me consultei com a Dra. Marina sabia que ela iria me ajudar! Fiz o teste de provocação oral (TPO) na clínica e foi excelente. Ela e Dra. Flávia foram impecáveis no cuidado. Me explicaram todos os passos e fiquei muito segura durante todo o procedimento. E o melhor: tive um final feliz e agora posso comer camarão com tranquilidade!"</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">Dra. Thaís Lara</span>
+                                <span class="author-loc">Otorrinolaringologista — Rio de Janeiro / RJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote">
+                                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                            </svg>
+                            <p class="testimonial-text">"Conviver com a asma enquanto mãe de uma filha asmática é uma montanha-russa de angústias. Isso mudou com a chegada da Dra. Marina. Foi com ela que, pela primeira vez na vida da minha filha, vivemos um inverno sem crise. Atenta, carinhosa, minuciosa, acessível: obrigada de coração."</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">Luisa</span>
+                                <span class="author-loc">mãe de paciente — Rio de Janeiro / RJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote">
+                                <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                                <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+                            </svg>
+                            <p class="testimonial-text">"A Dra. Flávia nos acolheu e nos ensinou quando nosso filho Lucas tinha 6 meses e descobrimos a APLV, dermatite e alergia ao ovo. Nesse caminho ela nunca largou nossa mão. Hoje o Lucas está com 7 anos e ela já faz parte da nossa família."</p>
+                            <div class="testimonial-author">
+                                <span class="author-name">Daniele</span>
+                                <span class="author-loc">mãe do Lucas — Rio de Janeiro / RJ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button id="prevBtn" class="slider-btn" aria-label="Anterior">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </button>
+                    <button id="nextBtn" class="slider-btn" aria-label="Próximo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <div id="sliderDots" class="slider-dots"></div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding: 16px 32px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                        <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                    </svg>
+                    Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quem Somos Section -->
+    <section id="quem-somos" class="section-padding about">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-header-tag">QUEM SOMOS</p>
+                <h2 class="section-header-title">Quem vai cuidar de você e da sua família?</h2>
+                <p class="section-header-desc">Médicas especialistas unidas pelo mesmo propósito: oferecer uma medicina de excelente nível técnico, com acolhimento e profundidade.</p>
+            </div>
+            
+            <div class="about-grid reveal">
+                <div class="about-img-frame">
+                    <img src="assets/doctors.jpeg" alt="Médicas Dra. Flávia Loyola e Dra. Marina Rigoni" class="about-img">
+                </div>
+                <div class="about-content">
+                    <p>Somos médicas alergistas e imunologistas, com formação também em pediatria, e nos dedicamos, há mais de uma década, ao cuidado de pacientes com alergias, especialmente de alergias respiratórias e alimentares graves.</p>
+                    <p>Nossa parceria foi construída por amizade e admiração profissional. Trabalhamos juntas unindo conhecimento e experiência para oferecer uma assistência individualizada, acolhedora e cuidadosa.</p>
+                    <p>Mais do que tratar doenças, nosso propósito é orientar e caminhar junto ao paciente promovendo segurança e qualidade de vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-padding faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-header-tag">PERGUNTAS FREQUENTES</p>
+                <h2 class="section-header-title">Dúvidas Frequentes</h2>
+            </div>
+            
+            <div class="faq-wrapper reveal">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Quanto tempo dura a consulta médica?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Nossas consultas são pensadas para oferecer um cuidado completo. Cada atendimento dura, em média, 60 minutos.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Qual é a faixa etária atendida?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Atendemos pacientes de todas as idades, de crianças até adultos.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        A clínica aceita planos de saúde?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Optamos por trabalhar exclusivamente com o atendimento particular. Acreditamos que o tempo é a peça fundamental para uma investigação minuciosa e para a construção de um plano personalizado.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Como devo me preparar para a primeira consulta?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Recomendamos que você anote as suas principais queixas e traga os exames anteriores. ATENÇÃO: alguns antialérgicos podem interferir no teste alérgico. Nossa equipe enviará as orientações no momento do agendamento.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Quais tipos de alergia são atendidos?
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            Alimentares (alergias IgE mediadas e não mediadas, esofagite eosinofílica), entre outras.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-footer">
+                <p>Ainda com dúvidas? Estamos a uma mensagem de distância.</p>
+                <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta" style="padding: 16px 32px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px; margin-right: 4px;">
+                        <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                    </svg>
+                    Falar com a equipe no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact Info Section -->
+    <section id="contato" class="section-padding visit">
+        <div class="container visit-grid reveal">
+            <div class="visit-info">
+                <p class="section-header-tag" style="text-align: left; margin: 0 0 8px 0;">VISITE-NOS</p>
+                <h3>Nosso Consultório</h3>
+                <p>Conheça a Allergie - Clínica de Excelência em Alergia. Nosso consultório está localizado em um complexo corporativo moderno e seguro na Barra da Tijuca.</p>
+                
+                <div class="address-box">
+                    <h4>Endereço</h4>
+                    <p>Av. João Cabral de Mello Neto, 850 — Sala 1329, Bloco 3<br>Barra da Tijuca, Rio de Janeiro/RJ<br>Edifício CEO Corporate Executive Offices</p>
+                </div>
+                
+                <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer" class="btn-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;">
+                        <path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path>
+                    </svg>
+                    Agendar Consulta
+                </a>
+            </div>
+            
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9796068252285!2d-43.360144988771146!3d-22.987770179116743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2720b08047%3A0xe543b5930b910408!2sCEO%20-%20Corporate%20Executive%20Offices!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#inicio" class="logo">
+                    <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.2" style="color: var(--cream);">
+                        <path d="M4 52 V28 a24 24 0 0 1 48 0 V52"></path>
+                        <path d="M18 44 L28 22 L38 44" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M22 38 H34" stroke-linecap="round"></path>
+                    </svg>
+                    <span class="logo-text">
+                        <span class="logo-title">Allergie</span>
+                        <span class="logo-subtitle" style="color: var(--clay);">Clínica</span>
+                    </span>
+                </a>
+                <p>Clínica de alergia e imunologia na Barra da Tijuca. Atendimento humano, criterioso e exclusivamente particular.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#tratamentos">O Que Atendemos</a></li>
+                    <li><a href="#clinica">Procedimentos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="https://wa.me/5521998378899" target="_blank" rel="noopener noreferrer">WhatsApp (21) 99837-8899</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:clinicaallergie@gmail.com">clinicaallergie@gmail.com</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Av. João Cabral de Mello Neto, 850 — Sala 1329, Bloco 3 — Barra da Tijuca / RJ</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>Clínica Allergie &copy; 2026 — Todos os direitos reservados. | CNPJ: 61.650.208/0001-40</p>
+            <div class="footer-bottom-docs">
+                <p>Dra. Flávia Carvalho Loyola — CRM 52.93921-8 | RQE 29263</p>
+                <p>Dra. Marina Rigoni Costa Moreira — CRM 52.94664-8 | RQE 29039</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

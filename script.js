@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // -------------------------------------------------------------
     // 1. Header scroll effect
     // -------------------------------------------------------------
@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', openMobileMenu);
     }
-    
+
     if (closeDrawerBtn) {
         closeDrawerBtn.addEventListener('click', closeMobileMenu);
     }
-    
+
     if (mobileOverlay) {
         mobileOverlay.addEventListener('click', closeMobileMenu);
     }
@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. Treatments 'Saiba Mais' Accordion/Expand logic
     // -------------------------------------------------------------
     const learnMoreButtons = document.querySelectorAll('.btn-learn-more');
-    
+
     learnMoreButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             e.preventDefault();
             const card = button.closest('.treatment-card');
             const detail = card.querySelector('.treatment-detail');
             const isCurrentlyActive = detail.classList.contains('active');
-            
+
             // Close other opened details
             document.querySelectorAll('.treatment-detail').forEach(d => {
                 d.classList.remove('active');
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.btn-learn-more').forEach(b => {
                 b.innerHTML = 'Saiba Mais <span>&rarr;</span>';
             });
-            
+
             if (!isCurrentlyActive) {
                 detail.classList.add('active');
                 detail.style.maxHeight = detail.scrollHeight + "px";
@@ -89,12 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const sliderDots = document.getElementById('sliderDots');
-    
+
     if (sliderContainer && prevBtn && nextBtn) {
         let currentIndex = 0;
         const slides = document.querySelectorAll('.slide');
         const totalSlides = slides.length;
-        
+
         function getVisibleSlidesCount() {
             return window.innerWidth <= 768 ? 1 : 2;
         }
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sliderDots.innerHTML = '';
             const visibleCount = getVisibleSlidesCount();
             const maxIndex = totalSlides - visibleCount;
-            
+
             for (let i = 0; i <= maxIndex; i++) {
                 const dot = document.createElement('div');
                 dot.classList.add('dot');
@@ -120,12 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
         function updateSlider() {
             const visibleCount = getVisibleSlidesCount();
             const maxIndex = totalSlides - visibleCount;
-            
+
             if (currentIndex > maxIndex) currentIndex = maxIndex;
             if (currentIndex < 0) currentIndex = 0;
-            
+
             sliderContainer.style.transform = `translateX(-${currentIndex * (100 / visibleCount + (12 / sliderContainer.clientWidth * 100))}%)`;
-            
+
             // Disable buttons if at limit
             prevBtn.disabled = currentIndex === 0;
             nextBtn.disabled = currentIndex >= maxIndex;
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
             renderDots();
             updateSlider();
         });
-        
+
         // Initial setup
         renderDots();
         updateSlider();
@@ -170,18 +170,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // 5. FAQ Accordion Toggle
     // -------------------------------------------------------------
     const faqHeaders = document.querySelectorAll('.accordion-header');
-    
+
     faqHeaders.forEach(header => {
         header.addEventListener('click', () => {
             const content = header.nextElementSibling;
             const isCurrentlyActive = header.classList.contains('active');
-            
+
             // Close all items
             faqHeaders.forEach(h => {
                 h.classList.remove('active');
                 h.nextElementSibling.style.maxHeight = null;
             });
-            
+
             if (!isCurrentlyActive) {
                 header.classList.add('active');
                 content.style.maxHeight = content.scrollHeight + "px";
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 6. Scroll Reveal Observer
     // -------------------------------------------------------------
     const revealElements = document.querySelectorAll('.reveal');
-    
+
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -216,18 +216,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const galeriaGrid = document.querySelector('.galeria-grid');
     if (galeriaGrid) {
         let scrollInterval;
-        
+
         function startGaleriaScroll() {
             if (window.innerWidth <= 992) {
                 if (!scrollInterval) {
                     scrollInterval = setInterval(() => {
                         const maxScroll = galeriaGrid.scrollWidth - galeriaGrid.clientWidth;
-                        let nextScroll = galeriaGrid.scrollLeft + galeriaGrid.clientWidth * 0.85; 
-                        
+                        let nextScroll = galeriaGrid.scrollLeft + galeriaGrid.clientWidth * 0.85;
+
                         if (galeriaGrid.scrollLeft >= maxScroll - 10) {
                             nextScroll = 0;
                         }
-                        
+
                         galeriaGrid.scrollTo({
                             left: nextScroll,
                             behavior: 'smooth'
@@ -241,20 +241,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-        
+
         startGaleriaScroll();
         window.addEventListener('resize', startGaleriaScroll);
-        
+
         galeriaGrid.addEventListener('touchstart', () => {
             if (scrollInterval) {
                 clearInterval(scrollInterval);
                 scrollInterval = null;
             }
-        }, {passive: true});
-        
+        }, { passive: true });
+
         galeriaGrid.addEventListener('touchend', () => {
             setTimeout(startGaleriaScroll, 3000);
-        }, {passive: true});
+        }, { passive: true });
     }
 });
 

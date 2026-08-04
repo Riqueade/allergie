@@ -209,5 +209,52 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => {
         revealObserver.observe(el);
     });
+
+    // -------------------------------------------------------------
+    // 7. Galeria Auto-scroll on Mobile
+    // -------------------------------------------------------------
+    const galeriaGrid = document.querySelector('.galeria-grid');
+    if (galeriaGrid) {
+        let scrollInterval;
+        
+        function startGaleriaScroll() {
+            if (window.innerWidth <= 992) {
+                if (!scrollInterval) {
+                    scrollInterval = setInterval(() => {
+                        const maxScroll = galeriaGrid.scrollWidth - galeriaGrid.clientWidth;
+                        let nextScroll = galeriaGrid.scrollLeft + galeriaGrid.clientWidth * 0.85; 
+                        
+                        if (galeriaGrid.scrollLeft >= maxScroll - 10) {
+                            nextScroll = 0;
+                        }
+                        
+                        galeriaGrid.scrollTo({
+                            left: nextScroll,
+                            behavior: 'smooth'
+                        });
+                    }, 3000);
+                }
+            } else {
+                if (scrollInterval) {
+                    clearInterval(scrollInterval);
+                    scrollInterval = null;
+                }
+            }
+        }
+        
+        startGaleriaScroll();
+        window.addEventListener('resize', startGaleriaScroll);
+        
+        galeriaGrid.addEventListener('touchstart', () => {
+            if (scrollInterval) {
+                clearInterval(scrollInterval);
+                scrollInterval = null;
+            }
+        }, {passive: true});
+        
+        galeriaGrid.addEventListener('touchend', () => {
+            setTimeout(startGaleriaScroll, 3000);
+        }, {passive: true});
+    }
 });
 
